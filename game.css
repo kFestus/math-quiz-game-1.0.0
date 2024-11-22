@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg-color: #95d8e9;
+    --chill-color: #044353;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    color: var(--chill-color);
+}
+
+#start-screen, #game-over-screen{
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    background-color: blueviolet;
+    background-image: linear-gradient(blue, violet);
+    border-color: blueviolet;
+    border-width: 3px;
+}
+
+.btn:hover{
+    background-image: linear-gradient(violet, blue);
+}
+
+.option-btn{
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 3px;
+    border: none;
+    color: black;
+    background-color: orange;
+    transition: background-color 0.3s;
+}
+
+.option-btn:hover{
+    background-color: #f0f0f0;
+}
+
+.option-btn.correct{
+    background-color: #4caf50;
+    color: white;
+}
+
+.option-btn.incorrect{
+    background-color: #f44336;
+    color: white;
+}
+
+.main-game{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-game-container, #timer, #game-over-screen{
+    display: none;
+}
+
+.question{
+    font-size: 40px;
+    text-align: center;
+}
+
+.option{
+    font-size: 20px;
+}
+
+.score-count{
+    text-align: center;
+    font-size: 28px;
+}
+
+#timer{
+    text-align: center;
+    font-size: 18px;
+}

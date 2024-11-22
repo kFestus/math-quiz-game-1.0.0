@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Game</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="game.css" />
+    </head>
+    <body>
+        <div id="start-screen">
+          <h1 class="main-title">Math Riddler</h1>
+        <p class="instructions">
+            Hey there! Are you good at math? Well even if you aren't let's help you get better.
+        </p>
+        <p class="instructions">
+            Try to get the correct answer to as many math questions as you can.
+        </p>
+        <p class="instructions">
+            You'll be given some options to choose from so that should make your task easier. But be careful, there's a timer.
+        </p>
+        <p class="instructions">Goodluck!</p>
+        <button class="btn" id="start-btn">Let's do some Math</button>
+        </div>
+        <div id="main-game-container">
+            <p class="question"></p>
+            <br>
+            <p class="option"><button class="option-btn" data-option="A">A</button><span class="optionA"></span></p>
+            <br>
+            <p class="option"><button class="option-btn" data-option="B">B</button><span class="optionB"></span></p>
+            <br>
+            <p class="option"><button class="option-btn" data-option="C">C</button><span class="optionC"></span></p>
+            <br>
+            <p class="option"><button class="option-btn" data-option="D">D</button><span class="optionD"></span></p>
+            <br>
+            <div id="score-display">
+                <p class="score-count">Score: </p>
+            </div>
+        </div>
+        <div id="timer"></div>
+        <div id="game-over-screen">
+            <h2 class="game-over-message">Wow! That was intense. Congratulations on reaching the end</h2>
+            <h3 class="final-score">Your final score is: </h3>
+            <button class="btn" id="restart-btn">Another round?</button>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
